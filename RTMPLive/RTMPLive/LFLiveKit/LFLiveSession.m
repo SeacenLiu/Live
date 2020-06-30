@@ -322,14 +322,24 @@
     return self.videoCaptureSource.mirror;
 }
 
-- (void)setMuted:(BOOL)muted {
-    [self willChangeValueForKey:@"muted"];
-    [self.audioCaptureSource setMuted:muted];
-    [self didChangeValueForKey:@"muted"];
+- (void)setAudioMuted:(BOOL)audioMuted {
+    [self willChangeValueForKey:@"audioMuted"];
+    [self.audioCaptureSource setMuted:audioMuted];
+    [self didChangeValueForKey:@"audioMuted"];
 }
 
-- (BOOL)muted {
+- (BOOL)audioMuted {
     return self.audioCaptureSource.muted;
+}
+
+- (void)setVideoMuted:(BOOL)videoMuted {
+    [self willChangeValueForKey:@"videoMuted"];
+    [self.videoCaptureSource setMuted:videoMuted];
+    [self didChangeValueForKey:@"videoMuted"];
+}
+
+- (BOOL)videoMuted {
+    return self.videoCaptureSource.muted;
 }
 
 - (void)setWarterMarkView:(UIView *)warterMarkView{

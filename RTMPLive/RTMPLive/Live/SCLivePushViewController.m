@@ -28,7 +28,14 @@
 #pragma mark - action
 
 - (IBAction)onSwitchCameraClicked:(UIButton *)sender {
-    
+    sender.selected = !sender.selected;
+    if (sender.selected) {
+        // 后置
+        self.liveSession.captureDevicePosition = AVCaptureDevicePositionBack;
+    } else {
+        // 前置
+        self.liveSession.captureDevicePosition = AVCaptureDevicePositionFront;
+    }
 }
 
 - (IBAction)onResolutionClicked:(UIButton *)sender {
@@ -36,11 +43,14 @@
 }
 
 - (IBAction)onMicCaptureClicked:(UIButton *)sender {
-    
+    sender.selected = !sender.selected;
+    self.liveSession.audioMuted = sender.isSelected;
 }
 
 - (IBAction)onVideoCaptureClicked:(UIButton *)sender {
-    
+    sender.selected = !sender.selected;
+    self.liveSession.videoMuted = sender.isSelected;
+    self.videoMutedTipsView.hidden = !sender.isSelected;
 }
 
 - (IBAction)onDashboardClicked:(UIButton *)sender {
@@ -53,6 +63,10 @@
     // RTMP
     [self configRTMPPusher];
     [self startRTMPPushStream];
+}
+
+- (void)dealloc {
+    [self endRTMPPushStream];
 }
 
 #pragma mark - Live
@@ -71,6 +85,10 @@
     LFLiveStreamInfo *streamInfo = [LFLiveStreamInfo new];
     streamInfo.url = @"rtmp://192.168.1.103:1935/live/test";
     [self.liveSession startLive:streamInfo];
+}
+
+- (void)endRTMPPushStream {
+    [self.liveSession stopLive];
 }
 
 #pragma mark - LFLiveSessionDelegate

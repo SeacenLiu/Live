@@ -90,7 +90,10 @@ typedef NS_ENUM(NSInteger,LFLiveCaptureTypeMask) {
 @property (nonatomic, assign) BOOL mirror;
 
 /** The muted control callbackAudioData,muted will memset 0.*/
-@property (nonatomic, assign) BOOL muted;
+@property (nonatomic, assign) BOOL audioMuted;
+
+/* The muted control videoCamera stop or start */
+@property (nonatomic, assign) BOOL videoMuted;
 
 /*  The adaptiveBitrate control auto adjust bitrate. Default is NO */
 @property (nonatomic, assign) BOOL adaptiveBitrate;

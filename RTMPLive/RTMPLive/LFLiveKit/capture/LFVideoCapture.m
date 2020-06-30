@@ -267,6 +267,16 @@
     return _movieWriter;
 }
 
+- (void)setMuted:(BOOL)muted {
+    _muted = muted;
+    if (muted) {
+        [self.videoCamera stopCameraCapture];
+    } else {
+        [self.videoCamera startCameraCapture];
+    }
+    [self.preView setHidden:muted];
+}
+
 #pragma mark -- Custom Method
 - (void)processVideo:(GPUImageOutput *)output {
     __weak typeof(self) _self = self;

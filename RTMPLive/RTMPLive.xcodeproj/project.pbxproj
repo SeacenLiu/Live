@@ -751,15 +751,15 @@
 		1497A3B224AAE57C002E88A9 /* LFLiveKit */ = {
 			isa = PBXGroup;
 			children = (
+				1497A3BD24AAE57C002E88A9 /* LFLiveKit.h */,
+				1497A3E924AAE57C002E88A9 /* LFLiveSession.h */,
+				1497A3C924AAE57C002E88A9 /* LFLiveSession.m */,
 				1497A3B324AAE57C002E88A9 /* configuration */,
 				1497A3B824AAE57C002E88A9 /* capture */,
-				1497A3BD24AAE57C002E88A9 /* LFLiveKit.h */,
-				1497A3BE24AAE57C002E88A9 /* objects */,
-				1497A3C924AAE57C002E88A9 /* LFLiveSession.m */,
-				1497A3CA24AAE57C002E88A9 /* publish */,
 				1497A3D224AAE57C002E88A9 /* filter */,
+				1497A3CA24AAE57C002E88A9 /* publish */,
 				1497A3D724AAE57C002E88A9 /* coder */,
-				1497A3E924AAE57C002E88A9 /* LFLiveSession.h */,
+				1497A3BE24AAE57C002E88A9 /* objects */,
 				1497A3EA24AAE57C002E88A9 /* Vendor */,
 			);
 			path = LFLiveKit;
@@ -769,9 +769,9 @@
 			isa = PBXGroup;
 			children = (
 				1497A3B424AAE57C002E88A9 /* LFLiveAudioConfiguration.h */,
-				1497A3B524AAE57C002E88A9 /* LFLiveVideoConfiguration.m */,
 				1497A3B624AAE57C002E88A9 /* LFLiveAudioConfiguration.m */,
 				1497A3B724AAE57C002E88A9 /* LFLiveVideoConfiguration.h */,
+				1497A3B524AAE57C002E88A9 /* LFLiveVideoConfiguration.m */,
 			);
 			path = configuration;
 			sourceTree = "<group>";
@@ -779,10 +779,10 @@
 		1497A3B824AAE57C002E88A9 /* capture */ = {
 			isa = PBXGroup;
 			children = (
-				1497A3B924AAE57C002E88A9 /* LFVideoCapture.m */,
 				1497A3BA24AAE57C002E88A9 /* LFAudioCapture.h */,
-				1497A3BB24AAE57C002E88A9 /* LFVideoCapture.h */,
 				1497A3BC24AAE57C002E88A9 /* LFAudioCapture.m */,
+				1497A3BB24AAE57C002E88A9 /* LFVideoCapture.h */,
+				1497A3B924AAE57C002E88A9 /* LFVideoCapture.m */,
 			);
 			path = capture;
 			sourceTree = "<group>";
@@ -790,16 +790,16 @@
 		1497A3BE24AAE57C002E88A9 /* objects */ = {
 			isa = PBXGroup;
 			children = (
-				1497A3BF24AAE57C002E88A9 /* LFVideoFrame.h */,
-				1497A3C024AAE57C002E88A9 /* LFLiveDebug.h */,
-				1497A3C124AAE57C002E88A9 /* LFAudioFrame.m */,
-				1497A3C224AAE57C002E88A9 /* LFLiveStreamInfo.m */,
 				1497A3C324AAE57C002E88A9 /* LFFrame.h */,
-				1497A3C424AAE57C002E88A9 /* LFVideoFrame.m */,
-				1497A3C524AAE57C002E88A9 /* LFLiveDebug.m */,
-				1497A3C624AAE57C002E88A9 /* LFLiveStreamInfo.h */,
-				1497A3C724AAE57C002E88A9 /* LFAudioFrame.h */,
 				1497A3C824AAE57C002E88A9 /* LFFrame.m */,
+				1497A3C724AAE57C002E88A9 /* LFAudioFrame.h */,
+				1497A3C124AAE57C002E88A9 /* LFAudioFrame.m */,
+				1497A3BF24AAE57C002E88A9 /* LFVideoFrame.h */,
+				1497A3C424AAE57C002E88A9 /* LFVideoFrame.m */,
+				1497A3C624AAE57C002E88A9 /* LFLiveStreamInfo.h */,
+				1497A3C224AAE57C002E88A9 /* LFLiveStreamInfo.m */,
+				1497A3C024AAE57C002E88A9 /* LFLiveDebug.h */,
+				1497A3C524AAE57C002E88A9 /* LFLiveDebug.m */,
 			);
 			path = objects;
 			sourceTree = "<group>";
@@ -807,13 +807,13 @@
 		1497A3CA24AAE57C002E88A9 /* publish */ = {
 			isa = PBXGroup;
 			children = (
-				1497A3CB24AAE57C002E88A9 /* LFStreamRTMPSocket.h */,
-				1497A3CC24AAE57C002E88A9 /* NSMutableArray+LFAdd.m */,
-				1497A3CD24AAE57C002E88A9 /* LFStreamingBuffer.h */,
-				1497A3CE24AAE57C002E88A9 /* LFStreamRtmpSocket.m */,
 				1497A3CF24AAE57C002E88A9 /* LFStreamSocket.h */,
-				1497A3D024AAE57C002E88A9 /* NSMutableArray+LFAdd.h */,
+				1497A3CB24AAE57C002E88A9 /* LFStreamRTMPSocket.h */,
+				1497A3CE24AAE57C002E88A9 /* LFStreamRtmpSocket.m */,
+				1497A3CD24AAE57C002E88A9 /* LFStreamingBuffer.h */,
 				1497A3D124AAE57C002E88A9 /* LFStreamingBuffer.m */,
+				1497A3D024AAE57C002E88A9 /* NSMutableArray+LFAdd.h */,
+				1497A3CC24AAE57C002E88A9 /* NSMutableArray+LFAdd.m */,
 			);
 			path = publish;
 			sourceTree = "<group>";
@@ -833,14 +833,14 @@
 			isa = PBXGroup;
 			children = (
 				1497A3D824AAE57C002E88A9 /* LFAudioEncoding.h */,
-				1497A3D924AAE57C002E88A9 /* LFH264VideoEncoder.h */,
-				1497A3DA24AAE57C002E88A9 /* LFHardwareAudioEncoder.m */,
-				1497A3DB24AAE57C002E88A9 /* LFH264VideoEncoder.mm */,
-				1497A3DC24AAE57C002E88A9 /* H264 */,
-				1497A3E524AAE57C002E88A9 /* LFHardwareVideoEncoder.h */,
-				1497A3E624AAE57C002E88A9 /* LFVideoEncoding.h */,
 				1497A3E724AAE57C002E88A9 /* LFHardwareAudioEncoder.h */,
+				1497A3DA24AAE57C002E88A9 /* LFHardwareAudioEncoder.m */,
+				1497A3E624AAE57C002E88A9 /* LFVideoEncoding.h */,
+				1497A3D924AAE57C002E88A9 /* LFH264VideoEncoder.h */,
+				1497A3DB24AAE57C002E88A9 /* LFH264VideoEncoder.mm */,
+				1497A3E524AAE57C002E88A9 /* LFHardwareVideoEncoder.h */,
 				1497A3E824AAE57C002E88A9 /* LFHardwareVideoEncoder.m */,
+				1497A3DC24AAE57C002E88A9 /* H264 */,
 			);
 			path = coder;
 			sourceTree = "<group>";
@@ -848,14 +848,14 @@
 		1497A3DC24AAE57C002E88A9 /* H264 */ = {
 			isa = PBXGroup;
 			children = (
-				1497A3DD24AAE57C002E88A9 /* LFVideoEncoder.h */,
-				1497A3DE24AAE57C002E88A9 /* LFMP4Atom.m */,
 				1497A3DF24AAE57C002E88A9 /* LFAVEncoder.h */,
-				1497A3E024AAE57C002E88A9 /* LFNALUnit.cpp */,
+				1497A3E424AAE57C002E88A9 /* LFAVEncoder.mm */,
+				1497A3DD24AAE57C002E88A9 /* LFVideoEncoder.h */,
 				1497A3E124AAE57C002E88A9 /* LFVideoEncoder.m */,
 				1497A3E224AAE57C002E88A9 /* LFMP4Atom.h */,
+				1497A3DE24AAE57C002E88A9 /* LFMP4Atom.m */,
 				1497A3E324AAE57C002E88A9 /* LFNALUnit.h */,
-				1497A3E424AAE57C002E88A9 /* LFAVEncoder.mm */,
+				1497A3E024AAE57C002E88A9 /* LFNALUnit.cpp */,
 			);
 			path = H264;
 			sourceTree = "<group>";
@@ -1241,22 +1241,22 @@
 		1497A54824AAE57D002E88A9 /* pili-librtmp */ = {
 			isa = PBXGroup;
 			children = (
-				1497A54924AAE57D002E88A9 /* log.c */,
-				1497A54A24AAE57D002E88A9 /* error.h */,
-				1497A54B24AAE57D002E88A9 /* http.h */,
+				1497A55824AAE57D002E88A9 /* rtmp.h */,
+				1497A55124AAE57D002E88A9 /* rtmp.c */,
 				1497A54C24AAE57D002E88A9 /* handshake.h */,
-				1497A54D24AAE57D002E88A9 /* dh.h */,
-				1497A54E24AAE57D002E88A9 /* dhgroups.h */,
+				1497A54B24AAE57D002E88A9 /* http.h */,
+				1497A55624AAE57D002E88A9 /* parseurl.c */,
+				1497A55224AAE57D002E88A9 /* amf.h */,
+				1497A55724AAE57D002E88A9 /* amf.c */,
 				1497A54F24AAE57D002E88A9 /* rtmp_sys.h */,
 				1497A55024AAE57D002E88A9 /* hashswf.c */,
-				1497A55124AAE57D002E88A9 /* rtmp.c */,
-				1497A55224AAE57D002E88A9 /* amf.h */,
-				1497A55324AAE57D002E88A9 /* error.c */,
 				1497A55424AAE57D002E88A9 /* log.h */,
+				1497A54924AAE57D002E88A9 /* log.c */,
 				1497A55524AAE57D002E88A9 /* bytes.h */,
-				1497A55624AAE57D002E88A9 /* parseurl.c */,
-				1497A55724AAE57D002E88A9 /* amf.c */,
-				1497A55824AAE57D002E88A9 /* rtmp.h */,
+				1497A54D24AAE57D002E88A9 /* dh.h */,
+				1497A54E24AAE57D002E88A9 /* dhgroups.h */,
+				1497A54A24AAE57D002E88A9 /* error.h */,
+				1497A55324AAE57D002E88A9 /* error.c */,
 			);
 			path = "pili-librtmp";
 			sourceTree = "<group>";

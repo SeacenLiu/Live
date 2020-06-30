@@ -68,6 +68,9 @@
 /* The saveLocalVideoPath is save the local video  path */
 @property (nonatomic, strong, nullable) NSURL *saveLocalVideoPath;
 
+/* The muted control videoCamera stop or start */
+@property (nonatomic, assign) BOOL muted;
+
 #pragma mark - Initializer
 ///=============================================================================
 /// @name Initializer
