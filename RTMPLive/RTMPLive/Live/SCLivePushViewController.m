@@ -83,7 +83,7 @@
 - (void)startRTMPPushStream {
 #warning RTMP URL
     LFLiveStreamInfo *streamInfo = [LFLiveStreamInfo new];
-    streamInfo.url = @"rtmp://192.168.1.103:1935/live/test";
+    streamInfo.url = @"rtmp://192.168.31.28:1935/live/test";
     [self.liveSession startLive:streamInfo];
 }
 

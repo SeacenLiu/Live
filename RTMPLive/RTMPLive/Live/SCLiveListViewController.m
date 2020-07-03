@@ -8,6 +8,7 @@
 
 #import "SCLiveListViewController.h"
 #import "SCLivePushViewController.h"
+#import "SCLivePlayViewController.h"
 
 @interface SCLiveListViewController ()
 
@@ -21,6 +22,12 @@
 - (IBAction)startLiveBtnClick:(id)sender {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Live" bundle:nil];
     SCLivePushViewController *vc = (SCLivePushViewController*)[storyboard instantiateViewControllerWithIdentifier:@"SCLivePushViewControllerId"];
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
+- (IBAction)testAudienceBtnClick:(id)sender {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Live" bundle:nil];
+    SCLivePlayViewController *vc = (SCLivePlayViewController*)[storyboard instantiateViewControllerWithIdentifier:@"SCLivePlayViewControllerId"];
     [self presentViewController:vc animated:YES completion:nil];
 }
 
